@@ -7,7 +7,7 @@ RUN apt-get update \
     # 開発ツール ここに追加していく
     && apt-get  install -y --no-install-recommends git bash-completion \
     # java用
-    && apt-get install -y --no-install-recommends software-properties-common java-common gpg-agent \
+    && apt-get install -y --no-install-recommends software-properties-common java-common gpg-agent maven \
     && add-apt-repository 'deb https://apt.corretto.aws stable main' \
     && curl https://apt.corretto.aws/corretto.key | sudo apt-key add - \
     && apt-get update \
