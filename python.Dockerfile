@@ -18,7 +18,10 @@ ARG PYTHON_PKG=python3.10
 ARG PIP_PKG=python3-pip
 RUN apt-get update \
     && apt-get install -y --no-install-recommends $PYTHON_PKG $PIP_PKG \
-    && ln -s /usr/bin/$PYTHON_PKG /usr/bin/python
+    && ln -s /usr/bin/$PYTHON_PKG /usr/bin/python \
+    # 不要なものを削除
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # root以外のユーザ
 ARG USERNAME=develop
