@@ -2,9 +2,9 @@ FROM ubuntu:21.10
 
 # 基本セットアップ
 RUN apt-get update \
-    && aapt-get pt install -y --no-install-recommends tzdata sudo curl wget \
+    && apt-get install -y --no-install-recommends tzdata sudo curl wget \
     # 開発ツール ここに追加していく
-    && apt-get  install -y --no-install-recommends git bash-completion \
+    && apt-get install -y --no-install-recommends git bash-completion \
     # 不要なものを削除
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
