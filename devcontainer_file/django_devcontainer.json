@@ -1,0 +1,12 @@
+{
+	"name": "Existing Dockerfile",
+	"context": "..",
+	"dockerFile": "../django.Dockerfile",
+	"settings": {},
+	"extensions": [
+		"ms-azuretools.vscode-docker"
+	],
+	"forwardPorts": [
+		8000
+	]
+}
