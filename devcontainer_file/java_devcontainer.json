@@ -1,0 +1,17 @@
+{
+	"name": "Existing Dockerfile",
+	"context": "..",
+	"dockerFile": "../Dockerfile",
+	"settings": {
+		"java.home": "/usr/lib/jvm/java-11-amazon-corretto",
+		"maven.executable.path": "/usr/bin/mvn",
+	},
+	"extensions": [
+		"ms-azuretools.vscode-docker",
+		"adashen.vscode-tomcat",
+		"vscjava.vscode-java-pack"
+	],
+	"forwardPorts": [
+		8080
+	]
+}
