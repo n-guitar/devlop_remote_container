@@ -3,9 +3,9 @@ FROM ubuntu:21.10
 
 # 基本セットアップ
 RUN apt-get update \
-    && apt-get  install -y --no-install-recommends tzdata sudo curl wget \
+    && apt-get install -y --no-install-recommends tzdata sudo curl wget \
     # 開発ツール ここに追加していく
-    && apt-get  install -y --no-install-recommends git bash-completion
+    && apt-get install -y --no-install-recommends git bash-completion
 # java用
 RUN  apt-get install -y --no-install-recommends software-properties-common java-common gpg-agent maven \
     && add-apt-repository 'deb https://apt.corretto.aws stable main' \
