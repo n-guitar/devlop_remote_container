@@ -1,0 +1,11 @@
+{
+	"name": "Existing Dockerfile",
+	"context": "..",
+	"dockerFile": "../go.Dockerfile",
+	"settings": {},
+	"extensions": [
+		"ms-azuretools.vscode-docker",
+		"golang.go",
+		"aldijav.golangwithdidi"
+	],
+}
