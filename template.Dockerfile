@@ -4,7 +4,7 @@ FROM ubuntu:21.10
 RUN apt-get update \
     && apt-get install -y --no-install-recommends tzdata sudo curl wget \
     # 開発ツール ここに追加していく
-    && apt-get install -y --no-install-recommends git bash-completion \
+    && apt-get install -y --no-install-recommends git bash-completion ca-certificates \
     # 不要なものを削除
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*

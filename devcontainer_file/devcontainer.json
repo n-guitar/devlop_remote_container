@@ -1,0 +1,9 @@
+{
+	"name": "Existing Dockerfile",
+	"context": "..",
+	"dockerFile": "../template.Dockerfile",
+	"settings": {},
+	"extensions": [
+		"ms-azuretools.vscode-docker"
+	]
+}
